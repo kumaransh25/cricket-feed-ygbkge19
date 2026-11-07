@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Cricket Hub player</title>
+<style>html,body{margin:0;height:100%;background:#000;overflow:hidden}iframe{position:fixed;inset:0;width:100%;height:100%;border:0}p{color:#ccc;font:24px sans-serif;text-align:center;margin-top:40vh}</style>
+</head>
+<body>
+<script>
+// Plays one YouTube video for the Cricket Hub TV app. YouTube needs the page embedding it to come
+// from a website (installed TV apps send no address, which YouTube refuses with Error 153).
+// Takes ?v=<11-character video id>&autoplay=0|1&start=<seconds>. Nothing else is accepted.
+(function(){
+  var q=new URLSearchParams(location.search),v=q.get('v')||'',a=q.get('autoplay')==='1'?1:0,s=parseInt(q.get('start')||'0',10)||0;
+  if(!/^[\w-]{11}$/.test(v)){document.body.innerHTML='<p>No video.</p>';return;}
+  var f=document.createElement('iframe');
+  f.src='https://www.youtube.com/embed/'+v+'?rel=0&playsinline=1&autoplay='+a+(a?'&mute=0':'')+(s>0?'&start='+s:'')+'&origin='+encodeURIComponent(location.origin);
+  f.allow='autoplay; encrypted-media; fullscreen; picture-in-picture';
+  f.referrerPolicy='strict-origin-when-cross-origin';
+  f.allowFullscreen=true;
+  document.body.appendChild(f);
+})();
+</script>
+</body>
+</html>
