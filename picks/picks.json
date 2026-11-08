@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "updated": "2026-11-08T23:05:00+02:00",
+  "picks": [
+    { "id": "nf-81769072", "title": "How to Ruin Diwali", "app": "netflix", "nf": "81769072", "kind": "Comedy · 3 episodes", "note": "Two families, one Diwali weekend.", "for": ["both"] },
+    { "id": "pv-the-greatest", "title": "The Greatest", "app": "prime", "kind": "Drama · new series", "note": "The life of Muhammad Ali.", "for": ["kumaran", "both"] },
+    { "id": "nf-81687036", "title": "The Polygamist", "app": "netflix", "nf": "81687036", "kind": "Drama · 22 episodes", "note": "Mzansi's big binge of the year.", "for": ["ravisha", "both"] },
+    { "id": "nf-81684455", "title": "180", "app": "netflix", "nf": "81684455", "kind": "Thriller · film", "note": "Joburg revenge, Warren Masemola.", "for": ["kumaran"] },
+    { "id": "pv-rings-of-power-3", "title": "The Rings of Power", "app": "prime", "kind": "Fantasy · season 3", "note": "New season from Wednesday.", "for": ["both"], "from": "2026-11-11" }
+  ]
+}
