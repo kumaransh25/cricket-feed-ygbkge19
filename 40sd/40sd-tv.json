@@ -1,0 +1,366 @@
+{
+ "version": 1,
+ "generated_at": "2026-11-11T21:28:54+02:00",
+ "stale_after": "2026-11-12T09:00:00+02:00",
+ "home": {
+  "line": "2 things need attention · Checkers order open",
+  "attention": 2,
+  "today_events": 0,
+  "open_orders": 1,
+  "running_low": 4
+ },
+ "needs_attention": [
+  {
+   "id": "money-over-garden-supplies-expenses-2026-11",
+   "group": "overdue",
+   "text": "Garden Supplies & Materials over budget for November",
+   "when": "2026-11-04",
+   "when_label": "7 days late",
+   "who": "shared",
+   "feature": "Money",
+   "icon": "wallet"
+  },
+  {
+   "id": "bill-municipal-2026-11",
+   "group": "week",
+   "text": "Municipal account for November",
+   "when": "2026-11-18",
+   "when_label": "Due Wed 18 Nov",
+   "who": "ravisha",
+   "feature": "Bills",
+   "icon": "receipt"
+  },
+  {
+   "id": "staff-payrun-2026-11",
+   "group": "soon",
+   "text": "Staff pay run for November",
+   "when": "2026-11-25",
+   "when_label": "Due Wed 25 Nov",
+   "who": "shared",
+   "feature": "Staff",
+   "icon": "users"
+  },
+  {
+   "id": "money-transfer-2026-11",
+   "group": "soon",
+   "text": "Transfer to Ravisha for November",
+   "when": "2026-11-27",
+   "when_label": "Due Fri 27 Nov",
+   "who": "kumaran",
+   "feature": "Money",
+   "icon": "wallet"
+  },
+  {
+   "id": "bill-fibre-2026-12",
+   "group": "soon",
+   "text": "Fibre for December",
+   "when": "2026-12-01",
+   "when_label": "Due Tue 1 Dec",
+   "who": "kumaran",
+   "feature": "Bills",
+   "icon": "receipt"
+  },
+  {
+   "id": "bill-pet-insurance-2026-12",
+   "group": "soon",
+   "text": "Pet insurance for December",
+   "when": "2026-12-01",
+   "when_label": "Due Tue 1 Dec",
+   "who": "kumaran",
+   "feature": "Bills",
+   "icon": "receipt"
+  }
+ ],
+ "today": {
+  "date": "2026-11-11",
+  "label": "Wednesday 11 November",
+  "events": [],
+  "notes": []
+ },
+ "coming_up": {
+  "days": [
+   {
+    "date": "2026-11-16",
+    "label": "Mon 16 Nov",
+    "items": [
+     {
+      "title": "Bin day",
+      "type": "bin",
+      "who": "both",
+      "time": null
+     }
+    ]
+   }
+  ],
+  "countdowns": [
+   {
+    "title": "Crystal Springs Trip with Govenders",
+    "date": "2026-12-14",
+    "label": "in 33 days",
+    "days": 33,
+    "who": "both"
+   },
+   {
+    "title": "Ravisha Durbs Xmas Trip",
+    "date": "2026-12-24",
+    "label": "in 43 days",
+    "days": 43,
+    "who": "ravisha"
+   }
+  ],
+  "birthdays": []
+ },
+ "month": {
+  "from": "2026-11-01",
+  "to": "2026-12-31",
+  "items": [
+   {
+    "title": "Crystal Springs Trip with Govenders",
+    "type": "trip",
+    "who": "both",
+    "start": "2026-12-14",
+    "end": "2026-12-18"
+   },
+   {
+    "title": "Kumarans December Leave",
+    "type": "leave",
+    "who": "kumaran",
+    "start": "2026-12-14",
+    "end": "2027-01-01"
+   },
+   {
+    "title": "Ravishas December Leave Part 1",
+    "type": "leave",
+    "who": "ravisha",
+    "start": "2026-12-14",
+    "end": "2026-12-18"
+   },
+   {
+    "title": "Ravisha Durbs Xmas Trip",
+    "type": "trip",
+    "who": "ravisha",
+    "start": "2026-12-24",
+    "end": "2026-12-31"
+   },
+   {
+    "title": "Ravishas December Leave Part 2",
+    "type": "leave",
+    "who": "ravisha",
+    "start": "2026-12-24",
+    "end": "2027-01-06"
+   }
+  ],
+  "holidays": [
+   {
+    "date": "2026-12-16",
+    "name": "Day of Reconciliation"
+   },
+   {
+    "date": "2026-12-25",
+    "name": "Christmas Day"
+   },
+   {
+    "date": "2026-12-26",
+    "name": "Day of Goodwill"
+   }
+  ],
+  "pay_days": [
+   {
+    "date": "2026-11-25",
+    "label": "Ravisha's pay day"
+   },
+   {
+    "date": "2026-11-25",
+    "label": "Staff pay day (Lydia, Nozwelo)"
+   },
+   {
+    "date": "2026-11-27",
+    "label": "Kumaran's pay day"
+   },
+   {
+    "date": "2026-11-27",
+    "label": "Staff pay day (Luweh)"
+   },
+   {
+    "date": "2026-12-24",
+    "label": "Ravisha's pay day"
+   },
+   {
+    "date": "2026-12-24",
+    "label": "Staff pay day (Lydia, Nozwelo)"
+   },
+   {
+    "date": "2026-12-28",
+    "label": "Kumaran's pay day"
+   },
+   {
+    "date": "2026-12-28",
+    "label": "Staff pay day (Luweh)"
+   }
+  ],
+  "bin_day": "monday"
+ },
+ "supplies": {
+  "orders": [
+   {
+    "shop": "Checkers",
+    "started_by": "Kumaran",
+    "status": "open",
+    "add_by_label": "Add by tomorrow, 5:15pm",
+    "items": 2,
+    "ticked": 0,
+    "lines": [
+     {
+      "text": "Chlorine",
+      "qty": null,
+      "asked_by": "Kumaran",
+      "ticked": false
+     },
+     {
+      "text": "Pool floater",
+      "qty": null,
+      "asked_by": "Kumaran",
+      "ticked": false
+     }
+    ]
+   }
+  ],
+  "low": [
+   {
+    "name": "Chlorine",
+    "group": "Pool",
+    "shop": "Any shop",
+    "since_label": "since today",
+    "marked_by": "Kumaran"
+   },
+   {
+    "name": "Dog food",
+    "group": "Shumba",
+    "shop": "Absolute Pets",
+    "since_label": "since today",
+    "marked_by": "Kumaran"
+   },
+   {
+    "name": "Eggs",
+    "group": "Fridge and dairy",
+    "shop": "Any shop",
+    "since_label": "since today",
+    "marked_by": "Kumaran"
+   },
+   {
+    "name": "Pool floater",
+    "group": "Pool",
+    "shop": "Any shop",
+    "since_label": "since today",
+    "marked_by": "Kumaran"
+   }
+  ],
+  "specials": [
+   {
+    "item": "Milk",
+    "shop": "Checkers",
+    "product": "Parmalat Everfresh UHT Full Cream Milk 6 x 1L",
+    "price_label": "R99,99",
+    "was_label": "R124,99",
+    "where": "Not stated",
+    "until_label": "found Wed 11 Nov"
+   },
+   {
+    "item": "Milk",
+    "shop": "Woolworths",
+    "product": "Woolworths Long Life Milk 6 x 1L (full cream, low fat or fat free)",
+    "price_label": "R104,99",
+    "was_label": null,
+    "where": "Not stated",
+    "until_label": "until Sun 22 Nov"
+   }
+  ]
+ },
+ "staff": {
+  "days": [
+   {
+    "date": "2026-11-11",
+    "label": "Today",
+    "working": [
+     {
+      "name": "Lydia"
+     },
+     {
+      "name": "Luweh"
+     }
+    ],
+    "away": []
+   },
+   {
+    "date": "2026-11-12",
+    "label": "Tomorrow",
+    "working": [],
+    "away": []
+   },
+   {
+    "date": "2026-11-13",
+    "label": "Fri 13 Nov",
+    "working": [
+     {
+      "name": "Lydia"
+     }
+    ],
+    "away": []
+   },
+   {
+    "date": "2026-11-14",
+    "label": "Sat 14 Nov",
+    "working": [],
+    "away": []
+   },
+   {
+    "date": "2026-11-15",
+    "label": "Sun 15 Nov",
+    "working": [],
+    "away": []
+   },
+   {
+    "date": "2026-11-16",
+    "label": "Mon 16 Nov",
+    "working": [
+     {
+      "name": "Lydia"
+     }
+    ],
+    "away": []
+   },
+   {
+    "date": "2026-11-17",
+    "label": "Tue 17 Nov",
+    "working": [],
+    "away": []
+   }
+  ]
+ },
+ "emergency": [
+  {
+   "label": "Emergency vet · Bryanston Veterinary Hospital",
+   "number": "011 706 6023"
+  },
+  {
+   "label": "Armed response",
+   "number": "011 678 1972"
+  },
+  {
+   "label": "Police (SAPS)",
+   "number": "10111"
+  },
+  {
+   "label": "Emergency from any mobile",
+   "number": "112"
+  },
+  {
+   "label": "Ambulance · Netcare 911",
+   "number": "082 911"
+  },
+  {
+   "label": "Ambulance · ER24",
+   "number": "084 124"
+  }
+ ]
+}
