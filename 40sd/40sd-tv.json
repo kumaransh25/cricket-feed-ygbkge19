@@ -1,12 +1,12 @@
 {
  "version": 1,
- "generated_at": "2026-11-12T19:45:16+02:00",
- "stale_after": "2026-11-12T22:45:16+02:00",
+ "generated_at": "2026-11-12T20:21:30+02:00",
+ "stale_after": "2026-11-12T23:21:30+02:00",
  "home": {
-  "line": "2 things need attention · Checkers order open",
+  "line": "2 things need attention",
   "attention": 2,
   "today_events": 0,
-  "open_orders": 1,
+  "open_orders": 0,
   "running_low": 4
  },
  "needs_attention": [
@@ -201,30 +201,7 @@
   "bin_day": "monday"
  },
  "supplies": {
-  "orders": [
-   {
-    "shop": "Checkers",
-    "started_by": "Kumaran",
-    "status": "open",
-    "add_by_label": "Add by today, 5:15pm",
-    "items": 2,
-    "ticked": 0,
-    "lines": [
-     {
-      "text": "Chlorine",
-      "qty": null,
-      "asked_by": "Kumaran",
-      "ticked": false
-     },
-     {
-      "text": "Pool floater",
-      "qty": null,
-      "asked_by": "Kumaran",
-      "ticked": false
-     }
-    ]
-   }
-  ],
+  "orders": [],
   "low": [
    {
     "name": "Chlorine",
