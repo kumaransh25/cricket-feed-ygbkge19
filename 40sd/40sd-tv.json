@@ -1,7 +1,7 @@
 {
  "version": 1,
- "generated_at": "2026-11-11T21:28:54+02:00",
- "stale_after": "2026-11-12T09:00:00+02:00",
+ "generated_at": "2026-11-12T19:45:16+02:00",
+ "stale_after": "2026-11-12T22:45:16+02:00",
  "home": {
   "line": "2 things need attention · Checkers order open",
   "attention": 2,
@@ -15,7 +15,7 @@
    "group": "overdue",
    "text": "Garden Supplies & Materials over budget for November",
    "when": "2026-11-04",
-   "when_label": "7 days late",
+   "when_label": "8 days late",
    "who": "shared",
    "feature": "Money",
    "icon": "wallet"
@@ -72,8 +72,8 @@
   }
  ],
  "today": {
-  "date": "2026-11-11",
-  "label": "Wednesday 11 November",
+  "date": "2026-11-12",
+  "label": "Thursday 12 November",
   "events": [],
   "notes": []
  },
@@ -96,15 +96,15 @@
    {
     "title": "Crystal Springs Trip with Govenders",
     "date": "2026-12-14",
-    "label": "in 33 days",
-    "days": 33,
+    "label": "in 32 days",
+    "days": 32,
     "who": "both"
    },
    {
     "title": "Ravisha Durbs Xmas Trip",
     "date": "2026-12-24",
-    "label": "in 43 days",
-    "days": 43,
+    "label": "in 42 days",
+    "days": 42,
     "who": "ravisha"
    }
   ],
@@ -206,7 +206,7 @@
     "shop": "Checkers",
     "started_by": "Kumaran",
     "status": "open",
-    "add_by_label": "Add by tomorrow, 5:15pm",
+    "add_by_label": "Add by today, 5:15pm",
     "items": 2,
     "ticked": 0,
     "lines": [
@@ -230,32 +230,41 @@
     "name": "Chlorine",
     "group": "Pool",
     "shop": "Any shop",
-    "since_label": "since today",
+    "since_label": "since Wed 11 Nov",
     "marked_by": "Kumaran"
    },
    {
     "name": "Dog food",
     "group": "Shumba",
     "shop": "Absolute Pets",
-    "since_label": "since today",
+    "since_label": "since Wed 11 Nov",
     "marked_by": "Kumaran"
    },
    {
     "name": "Eggs",
     "group": "Fridge and dairy",
     "shop": "Any shop",
-    "since_label": "since today",
+    "since_label": "since Wed 11 Nov",
     "marked_by": "Kumaran"
    },
    {
     "name": "Pool floater",
     "group": "Pool",
     "shop": "Any shop",
-    "since_label": "since today",
+    "since_label": "since Wed 11 Nov",
     "marked_by": "Kumaran"
    }
   ],
   "specials": [
+   {
+    "item": "Eggs",
+    "shop": "Checkers",
+    "product": "Nulaid Extra Large Eggs 18-Pack",
+    "price_label": "R49,99",
+    "was_label": "R69,99",
+    "where": "Not stated",
+    "until_label": "found Thu 12 Nov"
+   },
    {
     "item": "Milk",
     "shop": "Checkers",
@@ -273,33 +282,38 @@
     "was_label": null,
     "where": "Not stated",
     "until_label": "until Sun 22 Nov"
+   },
+   {
+    "item": "Toilet paper",
+    "shop": "Checkers",
+    "product": "Dinu Rose Collection 2-Ply Bathroom Tissue Roll 18-Pack",
+    "price_label": "R99,99",
+    "was_label": "R114,99",
+    "where": "Not stated",
+    "until_label": "found Thu 12 Nov"
+   },
+   {
+    "item": "Toilet paper",
+    "shop": "Woolworths",
+    "product": "Baby Soft 2-Ply Toilet Paper 18-pack",
+    "price_label": "R139,99",
+    "was_label": null,
+    "where": "Not stated",
+    "until_label": "until Sun 22 Nov"
    }
   ]
  },
  "staff": {
   "days": [
    {
-    "date": "2026-11-11",
-    "label": "Today",
-    "working": [
-     {
-      "name": "Lydia"
-     },
-     {
-      "name": "Luweh"
-     }
-    ],
-    "away": []
-   },
-   {
     "date": "2026-11-12",
-    "label": "Tomorrow",
+    "label": "Today",
     "working": [],
     "away": []
    },
    {
     "date": "2026-11-13",
-    "label": "Fri 13 Nov",
+    "label": "Tomorrow",
     "working": [
      {
       "name": "Lydia"
@@ -333,6 +347,19 @@
     "date": "2026-11-17",
     "label": "Tue 17 Nov",
     "working": [],
+    "away": []
+   },
+   {
+    "date": "2026-11-18",
+    "label": "Wed 18 Nov",
+    "working": [
+     {
+      "name": "Lydia"
+     },
+     {
+      "name": "Luweh"
+     }
+    ],
     "away": []
    }
   ]
