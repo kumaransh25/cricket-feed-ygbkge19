@@ -1,7 +1,7 @@
 {
  "version": 1,
- "generated_at": "2026-11-13T06:08:39+02:00",
- "stale_after": "2026-11-13T09:08:39+02:00",
+ "generated_at": "2026-11-13T07:06:00+02:00",
+ "stale_after": "2026-11-13T10:06:00+02:00",
  "home": {
   "line": "2 things need attention",
   "attention": 2,
@@ -241,6 +241,15 @@
     "was_label": "R69,99",
     "where": "Not stated",
     "until_label": "found Thu 12 Nov"
+   },
+   {
+    "item": "Eggs",
+    "shop": "Checkers",
+    "product": "Checkers Housebrand Large Eggs 30 Pack",
+    "price_label": "R79,99",
+    "was_label": "R109,99",
+    "where": "Not stated",
+    "until_label": "found Fri 13 Nov"
    },
    {
     "item": "Milk",
