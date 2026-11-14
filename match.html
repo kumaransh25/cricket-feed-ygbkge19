@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0E1712">
+<title>Match screen</title>
+<style>
+:root{--bg:#0E1712;--card:#15211A;--line:#26372D;--ink:#E5EEE7;--muted:#93A69A;--turf:#6CC394;--red:#F27A6B;--yt:#E62117;color-scheme:dark}
+*{box-sizing:border-box}[hidden]{display:none!important}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.vid{position:sticky;top:0;z-index:5;background:#000;aspect-ratio:16/9;width:100%}
+.vid iframe{width:100%;height:100%;border:0;display:block}
+.vid.none{position:static;aspect-ratio:auto;background:var(--card);border-bottom:1px solid var(--line);padding:16px;display:flex;flex-direction:column;gap:10px}
+.wrap{max-width:720px;margin:0 auto;padding:12px max(16px,env(safe-area-inset-left)) calc(24px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-right));display:flex;flex-direction:column;gap:12px}
+.vid.none .in{max-width:720px;margin:0 auto;width:100%;display:flex;flex-direction:column;gap:10px}
+h1{font-size:1.05rem;margin:0;line-height:1.25}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.muted{color:var(--muted)}.small{font-size:.82rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.tot{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 12px;align-items:baseline}
+.tot .t{font-weight:700;overflow-wrap:anywhere}.tot .s{font:800 1.9rem/1 system-ui;font-variant-numeric:tabular-nums}.tot .s small{font:400 .8rem system-ui;color:var(--muted);margin-left:4px}
+.status{font-weight:700;color:var(--turf)}.status.need{color:var(--red)}
+.over{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.over i{font-style:normal;min-width:28px;height:28px;padding:0 6px;border-radius:14px;display:inline-grid;place-items:center;font:700 .8rem system-ui;background:#22332A}
+.over i.b{background:var(--turf);color:#0E1712}.over i.w{background:var(--red);color:#1A0A0D}.over i.x{background:#3A2F17;color:#E3A847}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+button,.btn,input{font:inherit}
+.tab{border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:999px;padding:6px 12px;font-weight:600;cursor:pointer}
+.tab[aria-pressed=true]{background:var(--turf);border-color:var(--turf);color:#0E1712}
+table{width:100%;border-collapse:collapse;font-size:.88rem;font-variant-numeric:tabular-nums}
+th,td{padding:6px 4px;text-align:right;border-top:1px solid var(--line)}
+th:first-child,td:first-child{text-align:left}
+thead th{border-top:0;font-size:.7rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+td .how{display:block;font-size:.76rem;color:var(--muted)}
+tr.me td{background:rgba(108,195,148,.12)}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;border-radius:999px;padding:9px 16px;font-weight:700;border:1px solid var(--line);color:var(--ink);background:transparent;cursor:pointer}
+.acts{display:flex;gap:6px}.btn.small{padding:6px 12px;font-size:.84rem}
+.btn.yt{background:var(--yt);border-color:var(--yt);color:#fff}
+form{display:flex;gap:8px}
+input{flex:1;min-width:0;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:9px 10px}
+:focus-visible{outline:2px solid var(--turf);outline-offset:2px}
+@media (min-width:1000px) and (orientation:landscape){
+  body{display:grid;grid-template-columns:minmax(0,1fr) 420px;height:100vh;overflow:hidden}
+  .vid{position:static;height:auto;align-self:center}
+  .vid.none{align-self:stretch}
+  .wrap{height:100vh;overflow:auto;padding-top:16px}
+}
+</style>
+</head>
+<body>
+<div id="vid" class="vid none"></div>
+<main class="wrap">
+  <h1 id="title">Match screen</h1>
+  <div class="bar"><span id="ytn" class="small muted"></span><span class="acts"><a id="ytb" class="btn small" target="_blank" rel="noopener" hidden>YouTube app</a> <a id="lms" class="btn small" target="_blank" rel="noopener" hidden>LMS</a></span></div>
+  <div id="board" class="card"><span class="muted">Loading the scoreboard…</span></div>
+  <p class="small muted">Scores from LMS, refreshed every 15 seconds while this page is open. The coach is in your Cricket Hub.</p>
+</main>
+<script>
+// Cricket Hub match screen (14 Nov 2026). Phone page outside the Claude app, because the app blocks video and LMS inside the hub.
+// Takes ?m=<LMS match id>&yt=<11-character YouTube id>&t=<title>. Reads LMS's public live JSON and the TV feed's stream ids. Nothing is stored except a pasted stream id on this device.
+(function(){
+var q=new URLSearchParams(location.search);
+var M=(q.get('m')||'').replace(/\D/g,'').slice(0,8),YT=(q.get('yt')||''),T=(q.get('t')||'').slice(0,120);
+if(!/^[\w-]{11}$/.test(YT))YT='';
+var $=function(id){return document.getElementById(id);};
+function el(tag,attrs){var e=document.createElement(tag);for(var k in (attrs||{})){var v=attrs[k];if(v==null)continue;if(k==='text')e.textContent=v;else if(k==='class')e.className=v;else e.setAttribute(k,v);}
+  for(var i=2;i<arguments.length;i++){var c=arguments[i];if(c==null)continue;e.append(c.nodeType?c:document.createTextNode(String(c)));}return e;}
+var PASTE={};try{PASTE=JSON.parse(localStorage.getItem('matchYt')||'{}')||{};}catch(e){}
+function ytId(s){s=String(s||'').trim();var m=s.match(/(?:v=|youtu\.be\/|\/live\/|\/embed\/|\/shorts\/)([\w-]{11})/)||s.match(/^([\w-]{11})$/);return m?m[1]:'';}
+
+if(!M){document.title='Match screen';$('board').textContent='';
+  var f=el('form',{},el('input',{type:'text',inputmode:'url',placeholder:'LMS match link or ID','aria-label':'LMS match link or ID'}),el('button',{class:'btn',type:'submit'},'Open'));
+  f.onsubmit=function(e){e.preventDefault();var v=f.querySelector('input').value.match(/(\d{5,8})(?!.*\d{5,8})/);if(v)location.search='?m='+v[1];};
+  $('board').append(el('b',{},'Which game?'),f);$('vid').remove();return;}
+$('title').textContent=T||('LMS match '+M);document.title=(T||'Match '+M)+' · Match screen';
+$('lms').href='https://www.lastmanstands.com/lms-cricket/match-centre/live/'+M;$('lms').hidden=false;
+
+// ---------- Video ----------
+var shown='';
+function drawVid(){var id=YT||PASTE[M]||FEEDYT||'';if(id===shown&&id)return;shown=id;var v=$('vid');v.textContent='';
+  if(id){v.className='vid';var f=document.createElement('iframe');
+    f.src='https://www.youtube.com/embed/'+id+'?rel=0&playsinline=1&autoplay=1&mute=1&origin='+encodeURIComponent(location.origin);
+    f.allow='autoplay; encrypted-media; fullscreen; picture-in-picture';f.allowFullscreen=true;f.referrerPolicy='strict-origin-when-cross-origin';f.title='Match stream';v.append(f);
+    $('ytn').textContent='Stream starts muted: tap the speaker to hear it.';$('ytb').href='https://www.youtube.com/watch?v='+id;$('ytb').hidden=false;return;}
+  $('ytn').textContent='';$('ytb').hidden=true;
+  v.className='vid none';var inp=el('input',{type:'text',inputmode:'url',placeholder:'Paste the YouTube link','aria-label':'YouTube link'});
+  var f2=el('form',{},inp,el('button',{class:'btn',type:'submit'},'Play'));
+  f2.onsubmit=function(e){e.preventDefault();var x=ytId(inp.value);if(!x){inp.focus();return;}PASTE[M]=x;try{localStorage.setItem('matchYt',JSON.stringify(PASTE));}catch(er){}drawVid();};
+  v.append(el('div',{class:'in'},el('b',{},'No stream link yet'),
+    el('span',{class:'small muted'},'Tap "Find the stream" in the hub’s Live module, or find it on LMS’s YouTube channel and paste the link here.'),
+    el('div',{class:'bar'},el('a',{class:'btn yt',href:'https://www.youtube.com/@lastmanstandst20cricket/streams',target:'_blank',rel:'noopener'},'LMS on YouTube')),f2));}
+var FEEDYT='',feedAt=0;
+function feed(){if(YT||PASTE[M]||Date.now()-feedAt<5*60e3)return;feedAt=Date.now();
+  fetch('cricket-hub-tv.json?ts='+Math.floor(Date.now()/60e3),{cache:'no-store'}).then(function(r){return r.ok?r.json():null;}).then(function(j){var id=j&&j.meta&&j.meta.liveYt&&j.meta.liveYt[M];if(id&&/^[\w-]{11}$/.test(id)){FEEDYT=id;drawVid();}}).catch(function(){});}
+drawVid();feed();
+
+// ---------- Scoreboard ----------
+function lmsParse(raw){const st=typeof raw.State==='string'?JSON.parse(raw.State):raw.State;if(!st)return null;const ids={};
+  (function w(o){if(!o||typeof o!=='object')return;if(o.$id)ids[o.$id]=o;for(const k in o)w(o[k]);})(st);
+  const R=o=>o&&o.$ref?ids[o.$ref]:o;const nm=p=>{p=R(p);return p?((p.FirstName||'').replace(/\s*["“”][^"“”]*["“”]\s*/g,' ').trim()+' '+(p.LastName||'').trim()).trim():'';};
+  const ln=p=>{p=R(p);return p?(p.LastName||'').trim():'';};const bpo=st.BallsPerOver||5;
+  const fin=(st.Events||[]).some(e=>e&&/FixtureFinished/.test(e.$type||''));
+  const inns=(st.Innings||[]).map(i=>{const sc=R(i.Score)||{};const ov=R(sc.Overs)||{};
+    const bats=(i.Batsmen||[]).map(R).filter(Boolean).sort((a,b)=>(a.Order||0)-(b.Order||0)).map(b=>{let how='not out';const oe=b.OutEvent;
+      if(oe){const r=(oe.BallResults||[]).map(x=>(x.$type||'').split('.').pop());const bw=ln(oe.Bowler),fd=ln(oe.Fielder);const ct=oe.BallResults&&oe.BallResults[0]&&ln(oe.BallResults[0].Catcher);
+        how=r.includes('Caught')?(ct&&ct===bw?'c & b '+bw:'c '+(ct||fd)+' b '+bw):r.includes('Bowled')?'b '+bw:r.includes('Lbw')?'lbw b '+bw:r.includes('Stumped')?'st '+fd+' b '+bw:/RunOut/.test(r.join())?'run out'+(fd?' ('+fd+')':''):r.join(' ').toLowerCase()||'out';}
+      return{n:nm(b),r:b.RunsScored||0,b:b.BallsFaced||0,f4:b.Fours||0,f6:b.Sixes||0,out:!!oe,on:b.State===1,how};});
+    const bowls=(i.Bowlers||[]).map(R).filter(Boolean).map(b=>{const o=R(b.Overs)||{};return{n:nm(b),o:(o.Over||0)+(o.Ball?'.'+o.Ball:''),balls:(o.Over||0)*bpo+(o.Ball||0),r:b.RunsConceded||0,w:b.Wickets||0};});
+    const last=(i.Overs||[]).slice(-1)[0];const balls=last?(last.Events||[]).filter(e=>/\.Ball$/.test(e.$type||'')||e.BallResults).map(e=>{const rs=(e.BallResults||[]);const t=rs.map(x=>(x.$type||'').split('.').pop());
+      const extra=rs.reduce((a,x)=>a+(x.AdditionalRunsNotFromBat||0),0),runs=rs.reduce((a,x)=>a+(x.Runs||0),0);
+      if(t.some(y=>/Caught|Bowled|Lbw|Stumped|RunOut/.test(y)))return{t:'W',k:'w'};if(t.includes('Wide'))return{t:'wd'+(extra>1?extra:''),k:'x'};if(t.includes('NoBall'))return{t:'nb'+(runs?'+'+runs:''),k:'x'};
+      if(t.includes('Bye')||t.includes('LegBye'))return{t:extra+(t.includes('Bye')?'b':'lb'),k:'x'};if(t.includes('DotBall'))return{t:'•',k:'d'};return{t:String(runs),k:runs>=4?'b':''};}):[];
+    return{team:(R(i.BattingTeam)||{}).Name||'',runs:sc.Runs||0,wk:sc.Wickets||0,ov:(ov.Over||0)+(ov.Ball?'.'+ov.Ball:''),balls:(ov.Over||0)*bpo+(ov.Ball||0),avail:i.OversAvailable||20,ext:i.TotalExtras||0,bats,bowls,thisOver:{n:last?last.OverNumber:0,balls}};});
+  const home=(R(st.HomeTeam)||{}).Name||'',away=(R(st.AwayTeam)||{}).Name||'';let status='';
+  if(!inns.length)status='Not started yet';
+  else if(inns.length>1){const a=inns[0],b=inns[1];const need=a.runs+1-b.runs,left=b.avail*bpo-b.balls;
+    if(fin)status=b.runs>a.runs?b.team+' won':a.runs>b.runs?a.team+' won by '+(a.runs-b.runs)+' runs':'Match tied';
+    else status=need>0?b.team+' need '+need+' off '+left+' balls':b.team+' won';}
+  else status=fin?'Finished':inns[0].team+' batting first'+(st.IsInningsPausedRain?' · rain delay':'');
+  if(!fin&&(st.IsInningsPausedRain||st.IsInningsPausedInjury))status+=' · paused';
+  return{home,away,league:(st.LeagueName||'').trim(),inns,fin,status,bpo};}
+var sel=null,timer=null,lastKey='',fails=0;
+function stamp(){return new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit',second:'2-digit'});}
+function draw(d){var b=$('board');b.textContent='';
+  b.append(el('div',{class:'bar small muted'},el('span',{},d.league||''),el('span',{},'Updated '+stamp())));
+  d.inns.forEach(function(i){b.append(el('div',{class:'tot'},el('span',{class:'t'},i.team),el('span',{class:'s'},i.runs+'/'+i.wk,el('small',{},'('+i.ov+' ov)'))));});
+  if(!d.inns.length)b.append(el('div',{class:'tot'},el('span',{class:'t'},d.home),el('span',{class:'muted'},'')),el('div',{class:'tot'},el('span',{class:'t'},d.away),el('span',{class:'muted'},'')));
+  b.append(el('div',{class:'status'+(/need/.test(d.status)?' need':'')},d.status));
+  if(!d.inns.length)return;
+  if(sel==null||sel>=d.inns.length)sel=d.inns.length-1;var inn=d.inns[sel];
+  if(!d.fin&&sel===d.inns.length-1&&inn.thisOver&&inn.thisOver.balls.length){var o=el('div',{class:'over'},el('span',{class:'small muted'},'Over '+inn.thisOver.n));
+    inn.thisOver.balls.forEach(function(x){o.append(el('i',{class:x.k},x.t));});b.append(o);}
+  if(d.inns.length>1){var tb=el('div',{class:'tabs'});d.inns.forEach(function(i,k){var t=el('button',{class:'tab',type:'button','aria-pressed':String(k===sel)},i.team);t.onclick=function(){sel=k;draw(d);};tb.append(t);});b.append(tb);}
+  var bt=el('table',{},el('thead',{},el('tr',{},el('th',{},'Batting'),el('th',{},'R'),el('th',{},'B'),el('th',{},'4s'),el('th',{},'6s'),el('th',{},'SR'))),el('tbody'));
+  inn.bats.forEach(function(x){bt.tBodies[0].append(el('tr',{class:/Shantikumar/.test(x.n)?'me':''},el('td',{},x.n+(x.on&&!d.fin?' *':''),el('span',{class:'how'},x.how)),el('td',{},el('b',{},x.r)),el('td',{},x.b),el('td',{},x.f4),el('td',{},x.f6),el('td',{},x.b?Math.round(x.r*100/x.b):'–')));});
+  b.append(bt,el('div',{class:'small muted'},'Extras '+inn.ext));
+  var bw=el('table',{},el('thead',{},el('tr',{},el('th',{},'Bowling'),el('th',{},'O'),el('th',{},'R'),el('th',{},'W'),el('th',{},'Econ'))),el('tbody'));
+  inn.bowls.forEach(function(x){bw.tBodies[0].append(el('tr',{class:/Shantikumar/.test(x.n)?'me':''},el('td',{},x.n),el('td',{},x.o),el('td',{},x.r),el('td',{},el('b',{},x.w)),el('td',{},x.balls?(x.r*d.bpo/x.balls).toFixed(1):'–')));});
+  b.append(bw);
+  if(!T&&d.home){$('title').textContent=d.home+' v '+d.away;document.title=d.home+' v '+d.away+' · Match screen';}}
+function msg(t){var b=$('board');b.textContent='';b.append(el('span',{class:'muted'},t));}
+function next(ms){clearTimeout(timer);timer=setTimeout(load,ms);}
+function load(){if(document.hidden){next(15000);return;}feed();
+  fetch('https://live.lastmanstands.com/api/v1/Fixtures/'+M+'/LastManStands/FixtureState',{cache:'no-store'}).then(function(r){if(!r.ok)throw new Error('http '+r.status);return r.json();})
+  .then(function(raw){fails=0;var d=lmsParse(raw);
+    if(!d){if(!lastKey)msg('LMS isn’t scoring this game live yet. Checking again every minute.');next(60000);return;}
+    var k=JSON.stringify(d);if(k!==lastKey){lastKey=k;draw(d);}else{var s=document.querySelector('#board .bar span:last-child');if(s)s.textContent='Updated '+stamp();}
+    if(d.fin){return;}next(15000);})
+  .catch(function(){fails++;if(!lastKey)msg('Can’t reach LMS right now. Trying again in '+(fails>3?'2 minutes':'30 seconds')+'.');next(fails>3?120000:30000);});}
+document.addEventListener('visibilitychange',function(){if(!document.hidden&&!lastKey.includes('"fin":true')){next(300);}});
+load();
+})();
+</script>
+</body>
+</html>
