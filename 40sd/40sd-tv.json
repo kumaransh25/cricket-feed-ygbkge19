@@ -1,7 +1,7 @@
 {
  "version": 1,
- "generated_at": "2026-11-14T06:06:00+02:00",
- "stale_after": "2026-11-14T09:06:00+02:00",
+ "generated_at": "2026-11-14T07:06:32+02:00",
+ "stale_after": "2026-11-14T10:06:32+02:00",
  "home": {
   "line": "2 things need attention",
   "attention": 2,
@@ -252,6 +252,15 @@
     "until_label": "found Fri 13 Nov"
    },
    {
+    "item": "Eggs",
+    "shop": "Checkers",
+    "product": "Checkers Housebrand Large Eggs 48-Pack",
+    "price_label": "R139,99",
+    "was_label": "R169,99",
+    "where": "Not stated",
+    "until_label": "found Sat 14 Nov"
+   },
+   {
     "item": "Milk",
     "shop": "Checkers",
     "product": "Parmalat Everfresh UHT Full Cream Milk 6 x 1L",
@@ -277,6 +286,15 @@
     "was_label": "R114,99",
     "where": "Not stated",
     "until_label": "found Thu 12 Nov"
+   },
+   {
+    "item": "Toilet paper",
+    "shop": "Woolworths",
+    "product": "3-Ply Toilet Paper 9-pack",
+    "price_label": "R120",
+    "was_label": null,
+    "where": "Not stated",
+    "until_label": "until Sun 22 Nov"
    },
    {
     "item": "Toilet paper",
