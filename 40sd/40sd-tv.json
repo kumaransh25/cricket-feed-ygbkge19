@@ -1,7 +1,7 @@
 {
  "version": 1,
- "generated_at": "2026-11-14T20:08:32+02:00",
- "stale_after": "2026-11-14T23:08:32+02:00",
+ "generated_at": "2026-11-14T21:06:04+02:00",
+ "stale_after": "2026-11-15T09:00:00+02:00",
  "home": {
   "line": "2 things need attention",
   "attention": 2,
@@ -84,6 +84,13 @@
     "label": "Mon 16 Nov",
     "items": [
      {
+      "title": "Shumba's birthday",
+      "type": "birthday",
+      "who": "both",
+      "time": null,
+      "sub": "turns 3"
+     },
+     {
       "title": "Bin day",
       "type": "bin",
       "who": "both",
@@ -108,12 +115,27 @@
     "who": "ravisha"
    }
   ],
-  "birthdays": []
+  "birthdays": [
+   {
+    "name": "Shumba's birthday",
+    "type": "birthday",
+    "date": "2026-11-16",
+    "label": "Mon 16 Nov",
+    "sub": "turns 3"
+   }
+  ]
  },
  "month": {
   "from": "2026-11-01",
   "to": "2026-12-31",
   "items": [
+   {
+    "title": "Shumba's birthday",
+    "type": "birthday",
+    "who": "both",
+    "start": "2026-11-16",
+    "sub": "turns 3"
+   },
    {
     "title": "Crystal Springs Trip with Govenders",
     "type": "trip",
