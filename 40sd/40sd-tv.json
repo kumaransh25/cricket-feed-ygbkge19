@@ -1,7 +1,7 @@
 {
  "version": 1,
- "generated_at": "2026-11-13T21:08:54+02:00",
- "stale_after": "2026-11-14T09:00:00+02:00",
+ "generated_at": "2026-11-14T06:06:00+02:00",
+ "stale_after": "2026-11-14T09:06:00+02:00",
  "home": {
   "line": "2 things need attention",
   "attention": 2,
@@ -15,7 +15,7 @@
    "group": "overdue",
    "text": "Garden Supplies & Materials over budget for November",
    "when": "2026-11-04",
-   "when_label": "9 days late",
+   "when_label": "10 days late",
    "who": "shared",
    "feature": "Money",
    "icon": "wallet"
@@ -72,8 +72,8 @@
   }
  ],
  "today": {
-  "date": "2026-11-13",
-  "label": "Friday 13 November",
+  "date": "2026-11-14",
+  "label": "Saturday 14 November",
   "events": [],
   "notes": []
  },
@@ -96,15 +96,15 @@
    {
     "title": "Crystal Springs Trip with Govenders",
     "date": "2026-12-14",
-    "label": "in 31 days",
-    "days": 31,
+    "label": "in 30 days",
+    "days": 30,
     "who": "both"
    },
    {
     "title": "Ravisha Durbs Xmas Trip",
     "date": "2026-12-24",
-    "label": "in 41 days",
-    "days": 41,
+    "label": "in 40 days",
+    "days": 40,
     "who": "ravisha"
    }
   ],
@@ -292,24 +292,14 @@
  "staff": {
   "days": [
    {
-    "date": "2026-11-13",
-    "label": "Today",
-    "working": [
-     {
-      "name": "Lydia"
-     }
-    ],
-    "away": []
-   },
-   {
     "date": "2026-11-14",
-    "label": "Tomorrow",
+    "label": "Today",
     "working": [],
     "away": []
    },
    {
     "date": "2026-11-15",
-    "label": "Sun 15 Nov",
+    "label": "Tomorrow",
     "working": [],
     "away": []
    },
@@ -346,6 +336,16 @@
     "date": "2026-11-19",
     "label": "Thu 19 Nov",
     "working": [],
+    "away": []
+   },
+   {
+    "date": "2026-11-20",
+    "label": "Fri 20 Nov",
+    "working": [
+     {
+      "name": "Lydia"
+     }
+    ],
     "away": []
    }
   ]
