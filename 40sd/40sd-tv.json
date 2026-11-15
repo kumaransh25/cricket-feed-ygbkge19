@@ -1,9 +1,9 @@
 {
  "version": 1,
- "generated_at": "2026-11-14T21:06:04+02:00",
- "stale_after": "2026-11-15T09:00:00+02:00",
+ "generated_at": "2026-11-15T06:06:11+02:00",
+ "stale_after": "2026-11-15T09:06:11+02:00",
  "home": {
-  "line": "2 things need attention",
+  "line": "2 things need attention · Bin day tomorrow",
   "attention": 2,
   "today_events": 0,
   "open_orders": 0,
@@ -15,7 +15,7 @@
    "group": "overdue",
    "text": "Garden Supplies & Materials over budget for November",
    "when": "2026-11-04",
-   "when_label": "10 days late",
+   "when_label": "11 days late",
    "who": "shared",
    "feature": "Money",
    "icon": "wallet"
@@ -72,16 +72,18 @@
   }
  ],
  "today": {
-  "date": "2026-11-14",
-  "label": "Saturday 14 November",
+  "date": "2026-11-15",
+  "label": "Sunday 15 November",
   "events": [],
-  "notes": []
+  "notes": [
+   "Bin day tomorrow"
+  ]
  },
  "coming_up": {
   "days": [
    {
     "date": "2026-11-16",
-    "label": "Mon 16 Nov",
+    "label": "Tomorrow",
     "items": [
      {
       "title": "Shumba's birthday",
@@ -103,15 +105,15 @@
    {
     "title": "Crystal Springs Trip with Govenders",
     "date": "2026-12-14",
-    "label": "in 30 days",
-    "days": 30,
+    "label": "in 29 days",
+    "days": 29,
     "who": "both"
    },
    {
     "title": "Ravisha Durbs Xmas Trip",
     "date": "2026-12-24",
-    "label": "in 40 days",
-    "days": 40,
+    "label": "in 39 days",
+    "days": 39,
     "who": "ravisha"
    }
   ],
@@ -332,20 +334,14 @@
  "staff": {
   "days": [
    {
-    "date": "2026-11-14",
+    "date": "2026-11-15",
     "label": "Today",
     "working": [],
     "away": []
    },
    {
-    "date": "2026-11-15",
-    "label": "Tomorrow",
-    "working": [],
-    "away": []
-   },
-   {
     "date": "2026-11-16",
-    "label": "Mon 16 Nov",
+    "label": "Tomorrow",
     "working": [
      {
       "name": "Lydia"
@@ -386,6 +382,12 @@
       "name": "Lydia"
      }
     ],
+    "away": []
+   },
+   {
+    "date": "2026-11-21",
+    "label": "Sat 21 Nov",
+    "working": [],
     "away": []
    }
   ]
