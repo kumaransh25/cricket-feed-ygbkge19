@@ -1,7 +1,7 @@
 {
  "version": 1,
- "generated_at": "2026-11-15T06:06:11+02:00",
- "stale_after": "2026-11-15T09:06:11+02:00",
+ "generated_at": "2026-11-15T07:05:35+02:00",
+ "stale_after": "2026-11-15T10:05:35+02:00",
  "home": {
   "line": "2 things need attention · Bin day tomorrow",
   "attention": 2,
@@ -301,6 +301,15 @@
     "was_label": null,
     "where": "Not stated",
     "until_label": "until Sun 22 Nov"
+   },
+   {
+    "item": "Toilet paper",
+    "shop": "Checkers",
+    "product": "Dinu Rose Collection 2-Ply Bathroom Tissue Roll 9-Pack",
+    "price_label": "R69,99",
+    "was_label": "R89,99",
+    "where": "Not stated",
+    "until_label": "found Sun 15 Nov"
    },
    {
     "item": "Toilet paper",
