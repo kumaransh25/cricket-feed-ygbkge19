@@ -1,13 +1,13 @@
 {
  "version": 1,
- "generated_at": "2026-11-16T19:06:26+02:00",
- "stale_after": "2026-11-16T22:06:26+02:00",
+ "generated_at": "2026-11-16T20:05:57+02:00",
+ "stale_after": "2026-11-16T23:05:57+02:00",
  "home": {
   "line": "2 things need attention · 1 event today · Bin day today",
   "attention": 2,
   "today_events": 1,
   "open_orders": 0,
-  "running_low": 4
+  "running_low": 3
  },
  "needs_attention": [
   {
@@ -228,23 +228,9 @@
   "orders": [],
   "low": [
    {
-    "name": "Chlorine",
-    "group": "Pool",
-    "shop": "Any shop",
-    "since_label": "since Wed 11 Nov",
-    "marked_by": "Kumaran"
-   },
-   {
     "name": "Dog food",
     "group": "Shumba",
     "shop": "Absolute Pets",
-    "since_label": "since Wed 11 Nov",
-    "marked_by": "Kumaran"
-   },
-   {
-    "name": "Eggs",
-    "group": "Fridge and dairy",
-    "shop": "Any shop",
     "since_label": "since Wed 11 Nov",
     "marked_by": "Kumaran"
    },
@@ -253,6 +239,13 @@
     "group": "Pool",
     "shop": "Any shop",
     "since_label": "since Wed 11 Nov",
+    "marked_by": "Kumaran"
+   },
+   {
+    "name": "Black tea",
+    "group": "Coffee and drinks",
+    "shop": "Any shop",
+    "since_label": "since today",
     "marked_by": "Kumaran"
    }
   ],
