@@ -1,11 +1,11 @@
 {
  "version": 1,
- "generated_at": "2026-11-16T21:06:09+02:00",
- "stale_after": "2026-11-17T09:00:00+02:00",
+ "generated_at": "2026-11-17T06:06:01+02:00",
+ "stale_after": "2026-11-17T09:06:01+02:00",
  "home": {
-  "line": "2 things need attention · 1 event today · Bin day today",
+  "line": "2 things need attention",
   "attention": 2,
-  "today_events": 1,
+  "today_events": 0,
   "open_orders": 0,
   "running_low": 3
  },
@@ -15,7 +15,7 @@
    "group": "overdue",
    "text": "Garden Supplies & Materials over budget for November",
    "when": "2026-11-04",
-   "when_label": "12 days late",
+   "when_label": "13 days late",
    "who": "shared",
    "feature": "Money",
    "icon": "wallet"
@@ -25,7 +25,7 @@
    "group": "week",
    "text": "Municipal account for November",
    "when": "2026-11-18",
-   "when_label": "Due Wed 18 Nov",
+   "when_label": "Due tomorrow",
    "who": "ravisha",
    "feature": "Bills",
    "icon": "receipt"
@@ -72,19 +72,10 @@
   }
  ],
  "today": {
-  "date": "2026-11-16",
-  "label": "Monday 16 November",
-  "events": [
-   {
-    "title": "Shumba's birthday",
-    "type": "birthday",
-    "who": "both",
-    "sub": "turns 3"
-   }
-  ],
-  "notes": [
-   "Bin day today"
-  ]
+  "date": "2026-11-17",
+  "label": "Tuesday 17 November",
+  "events": [],
+  "notes": []
  },
  "coming_up": {
   "days": [
@@ -105,27 +96,19 @@
    {
     "title": "Crystal Springs Trip with Govenders",
     "date": "2026-12-14",
-    "label": "in 28 days",
-    "days": 28,
+    "label": "in 27 days",
+    "days": 27,
     "who": "both"
    },
    {
     "title": "Ravisha Durbs Xmas Trip",
     "date": "2026-12-24",
-    "label": "in 38 days",
-    "days": 38,
+    "label": "in 37 days",
+    "days": 37,
     "who": "ravisha"
    }
   ],
-  "birthdays": [
-   {
-    "name": "Shumba's birthday",
-    "type": "birthday",
-    "date": "2026-11-16",
-    "label": "Mon 16 Nov",
-    "sub": "turns 3"
-   }
-  ]
+  "birthdays": []
  },
  "month": {
   "from": "2026-11-01",
@@ -245,7 +228,7 @@
     "name": "Black tea",
     "group": "Coffee and drinks",
     "shop": "Any shop",
-    "since_label": "since today",
+    "since_label": "since Mon 16 Nov",
     "marked_by": "Kumaran"
    }
   ],
@@ -336,24 +319,14 @@
  "staff": {
   "days": [
    {
-    "date": "2026-11-16",
-    "label": "Today",
-    "working": [
-     {
-      "name": "Lydia"
-     }
-    ],
-    "away": []
-   },
-   {
     "date": "2026-11-17",
-    "label": "Tomorrow",
+    "label": "Today",
     "working": [],
     "away": []
    },
    {
     "date": "2026-11-18",
-    "label": "Wed 18 Nov",
+    "label": "Tomorrow",
     "working": [
      {
       "name": "Lydia"
@@ -390,6 +363,19 @@
     "date": "2026-11-22",
     "label": "Sun 22 Nov",
     "working": [],
+    "away": []
+   },
+   {
+    "date": "2026-11-23",
+    "label": "Mon 23 Nov",
+    "working": [
+     {
+      "name": "Lydia"
+     },
+     {
+      "name": "Nozwelo"
+     }
+    ],
     "away": []
    }
   ]
