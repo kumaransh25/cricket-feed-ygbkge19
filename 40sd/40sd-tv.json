@@ -1,7 +1,7 @@
 {
  "version": 1,
- "generated_at": "2026-11-20T21:06:11+02:00",
- "stale_after": "2026-11-21T09:00:00+02:00",
+ "generated_at": "2026-11-21T06:05:37+02:00",
+ "stale_after": "2026-11-21T09:05:37+02:00",
  "home": {
   "line": "4 things need attention",
   "attention": 4,
@@ -15,7 +15,7 @@
    "group": "overdue",
    "text": "Garden Supplies & Materials over budget for November",
    "when": "2026-11-04",
-   "when_label": "16 days late",
+   "when_label": "17 days late",
    "who": "shared",
    "feature": "Money",
    "icon": "wallet"
@@ -25,7 +25,7 @@
    "group": "overdue",
    "text": "Overdue: Municipal account for November",
    "when": "2026-11-18",
-   "when_label": "2 days late",
+   "when_label": "3 days late",
    "who": "ravisha",
    "feature": "Bills",
    "icon": "receipt"
@@ -82,8 +82,8 @@
   }
  ],
  "today": {
-  "date": "2026-11-20",
-  "label": "Friday 20 November",
+  "date": "2026-11-21",
+  "label": "Saturday 21 November",
   "events": [],
   "notes": []
  },
@@ -142,15 +142,15 @@
    {
     "title": "Crystal Springs Trip with Govenders",
     "date": "2026-12-14",
-    "label": "in 24 days",
-    "days": 24,
+    "label": "in 23 days",
+    "days": 23,
     "who": "both"
    },
    {
     "title": "Ravisha Durbs Xmas Trip",
     "date": "2026-12-24",
-    "label": "in 34 days",
-    "days": 34,
+    "label": "in 33 days",
+    "days": 33,
     "who": "ravisha"
    }
   ],
@@ -282,15 +282,6 @@
    {
     "item": "Eggs",
     "shop": "Checkers",
-    "product": "Checkers Housebrand Large Eggs 30 Pack",
-    "price_label": "R79,99",
-    "was_label": "R109,99",
-    "where": "Not stated",
-    "until_label": "found Fri 13 Nov"
-   },
-   {
-    "item": "Eggs",
-    "shop": "Checkers",
     "product": "Checkers Housebrand Large Eggs 48-Pack",
     "price_label": "R139,99",
     "was_label": "R169,99",
@@ -338,24 +329,14 @@
  "staff": {
   "days": [
    {
-    "date": "2026-11-20",
-    "label": "Today",
-    "working": [
-     {
-      "name": "Lydia"
-     }
-    ],
-    "away": []
-   },
-   {
     "date": "2026-11-21",
-    "label": "Tomorrow",
+    "label": "Today",
     "working": [],
     "away": []
    },
    {
     "date": "2026-11-22",
-    "label": "Sun 22 Nov",
+    "label": "Tomorrow",
     "working": [],
     "away": []
    },
@@ -395,6 +376,16 @@
     "date": "2026-11-26",
     "label": "Thu 26 Nov",
     "working": [],
+    "away": []
+   },
+   {
+    "date": "2026-11-27",
+    "label": "Fri 27 Nov",
+    "working": [
+     {
+      "name": "Lydia"
+     }
+    ],
     "away": []
    }
   ]
