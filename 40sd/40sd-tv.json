@@ -1,9 +1,9 @@
 {
  "version": 1,
- "generated_at": "2026-11-21T21:05:59+02:00",
- "stale_after": "2026-11-22T09:00:00+02:00",
+ "generated_at": "2026-11-22T06:06:12+02:00",
+ "stale_after": "2026-11-22T09:06:12+02:00",
  "home": {
-  "line": "4 things need attention",
+  "line": "4 things need attention · Bin day tomorrow",
   "attention": 4,
   "today_events": 0,
   "open_orders": 0,
@@ -15,7 +15,7 @@
    "group": "overdue",
    "text": "Garden Supplies & Materials over budget for November",
    "when": "2026-11-04",
-   "when_label": "17 days late",
+   "when_label": "18 days late",
    "who": "shared",
    "feature": "Money",
    "icon": "wallet"
@@ -25,7 +25,7 @@
    "group": "overdue",
    "text": "Overdue: Municipal account for November",
    "when": "2026-11-18",
-   "when_label": "3 days late",
+   "when_label": "4 days late",
    "who": "ravisha",
    "feature": "Bills",
    "icon": "receipt"
@@ -82,16 +82,18 @@
   }
  ],
  "today": {
-  "date": "2026-11-21",
-  "label": "Saturday 21 November",
+  "date": "2026-11-22",
+  "label": "Sunday 22 November",
   "events": [],
-  "notes": []
+  "notes": [
+   "Bin day tomorrow"
+  ]
  },
  "coming_up": {
   "days": [
    {
     "date": "2026-11-23",
-    "label": "Mon 23 Nov",
+    "label": "Tomorrow",
     "items": [
      {
       "title": "Bin day",
@@ -142,15 +144,15 @@
    {
     "title": "Crystal Springs Trip with Govenders",
     "date": "2026-12-14",
-    "label": "in 23 days",
-    "days": 23,
+    "label": "in 22 days",
+    "days": 22,
     "who": "both"
    },
    {
     "title": "Ravisha Durbs Xmas Trip",
     "date": "2026-12-24",
-    "label": "in 33 days",
-    "days": 33,
+    "label": "in 32 days",
+    "days": 32,
     "who": "ravisha"
    }
   ],
@@ -280,15 +282,6 @@
   ],
   "specials": [
    {
-    "item": "Eggs",
-    "shop": "Checkers",
-    "product": "Checkers Housebrand Large Eggs 48-Pack",
-    "price_label": "R139,99",
-    "was_label": "R169,99",
-    "where": "Not stated",
-    "until_label": "found Sat 14 Nov"
-   },
-   {
     "item": "Milk",
     "shop": "Woolworths",
     "product": "Woolworths Long Life Milk 6 x 1L (full cream, low fat or fat free)",
@@ -329,20 +322,14 @@
  "staff": {
   "days": [
    {
-    "date": "2026-11-21",
+    "date": "2026-11-22",
     "label": "Today",
     "working": [],
     "away": []
    },
    {
-    "date": "2026-11-22",
-    "label": "Tomorrow",
-    "working": [],
-    "away": []
-   },
-   {
     "date": "2026-11-23",
-    "label": "Mon 23 Nov",
+    "label": "Tomorrow",
     "working": [
      {
       "name": "Lydia"
@@ -386,6 +373,12 @@
       "name": "Lydia"
      }
     ],
+    "away": []
+   },
+   {
+    "date": "2026-11-28",
+    "label": "Sat 28 Nov",
+    "working": [],
     "away": []
    }
   ]
