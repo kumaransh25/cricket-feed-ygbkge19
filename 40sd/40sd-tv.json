@@ -1,9 +1,9 @@
 {
  "version": 1,
- "generated_at": "2026-11-22T21:06:04+02:00",
- "stale_after": "2026-11-23T09:00:00+02:00",
+ "generated_at": "2026-11-23T06:05:53+02:00",
+ "stale_after": "2026-11-23T09:05:53+02:00",
  "home": {
-  "line": "4 things need attention · Bin day tomorrow",
+  "line": "4 things need attention · Bin day today",
   "attention": 4,
   "today_events": 0,
   "open_orders": 0,
@@ -15,7 +15,7 @@
    "group": "overdue",
    "text": "Garden Supplies & Materials over budget for November",
    "when": "2026-11-04",
-   "when_label": "18 days late",
+   "when_label": "19 days late",
    "who": "shared",
    "feature": "Money",
    "icon": "wallet"
@@ -25,7 +25,7 @@
    "group": "overdue",
    "text": "Overdue: Municipal account for November",
    "when": "2026-11-18",
-   "when_label": "4 days late",
+   "when_label": "5 days late",
    "who": "ravisha",
    "feature": "Bills",
    "icon": "receipt"
@@ -82,27 +82,15 @@
   }
  ],
  "today": {
-  "date": "2026-11-22",
-  "label": "Sunday 22 November",
+  "date": "2026-11-23",
+  "label": "Monday 23 November",
   "events": [],
   "notes": [
-   "Bin day tomorrow"
+   "Bin day today"
   ]
  },
  "coming_up": {
   "days": [
-   {
-    "date": "2026-11-23",
-    "label": "Tomorrow",
-    "items": [
-     {
-      "title": "Bin day",
-      "type": "bin",
-      "who": "both",
-      "time": null
-     }
-    ]
-   },
    {
     "date": "2026-11-25",
     "label": "Wed 25 Nov",
@@ -138,21 +126,33 @@
       "time": null
      }
     ]
+   },
+   {
+    "date": "2026-11-30",
+    "label": "Mon 30 Nov",
+    "items": [
+     {
+      "title": "Bin day",
+      "type": "bin",
+      "who": "both",
+      "time": null
+     }
+    ]
    }
   ],
   "countdowns": [
    {
     "title": "Crystal Springs Trip with Govenders",
     "date": "2026-12-14",
-    "label": "in 22 days",
-    "days": 22,
+    "label": "in 21 days",
+    "days": 21,
     "who": "both"
    },
    {
     "title": "Ravisha Durbs Xmas Trip",
     "date": "2026-12-24",
-    "label": "in 32 days",
-    "days": 32,
+    "label": "in 31 days",
+    "days": 31,
     "who": "ravisha"
    }
   ],
@@ -280,56 +280,13 @@
     "marked_by": "Kumaran"
    }
   ],
-  "specials": [
-   {
-    "item": "Milk",
-    "shop": "Woolworths",
-    "product": "Woolworths Long Life Milk 6 x 1L (full cream, low fat or fat free)",
-    "price_label": "R104,99",
-    "was_label": null,
-    "where": "Not stated",
-    "until_label": "until Sun 22 Nov"
-   },
-   {
-    "item": "Toilet paper",
-    "shop": "Checkers",
-    "product": "Dinu Rose Collection 2-Ply Bathroom Tissue Roll 9-Pack",
-    "price_label": "R69,99",
-    "was_label": "R89,99",
-    "where": "Not stated",
-    "until_label": "found Sun 15 Nov"
-   },
-   {
-    "item": "Toilet paper",
-    "shop": "Woolworths",
-    "product": "3-Ply Toilet Paper 9-pack",
-    "price_label": "R120",
-    "was_label": null,
-    "where": "Not stated",
-    "until_label": "until Sun 22 Nov"
-   },
-   {
-    "item": "Toilet paper",
-    "shop": "Woolworths",
-    "product": "Baby Soft 2-Ply Toilet Paper 18-pack",
-    "price_label": "R139,99",
-    "was_label": null,
-    "where": "Not stated",
-    "until_label": "until Sun 22 Nov"
-   }
-  ]
+  "specials": []
  },
  "staff": {
   "days": [
    {
-    "date": "2026-11-22",
-    "label": "Today",
-    "working": [],
-    "away": []
-   },
-   {
     "date": "2026-11-23",
-    "label": "Tomorrow",
+    "label": "Today",
     "working": [
      {
       "name": "Lydia"
@@ -342,7 +299,7 @@
    },
    {
     "date": "2026-11-24",
-    "label": "Tue 24 Nov",
+    "label": "Tomorrow",
     "working": [],
     "away": []
    },
@@ -378,6 +335,12 @@
    {
     "date": "2026-11-28",
     "label": "Sat 28 Nov",
+    "working": [],
+    "away": []
+   },
+   {
+    "date": "2026-11-29",
+    "label": "Sun 29 Nov",
     "working": [],
     "away": []
    }
