@@ -1,10 +1,10 @@
 {
  "version": 1,
- "generated_at": "2026-11-23T21:04:29+02:00",
- "stale_after": "2026-11-24T09:00:00+02:00",
+ "generated_at": "2026-11-24T06:06:07+02:00",
+ "stale_after": "2026-11-24T09:06:07+02:00",
  "home": {
-  "line": "4 things need attention · Bin day today",
-  "attention": 4,
+  "line": "6 things need attention",
+  "attention": 6,
   "today_events": 0,
   "open_orders": 0,
   "running_low": 3
@@ -15,7 +15,7 @@
    "group": "overdue",
    "text": "Garden Supplies & Materials over budget for November",
    "when": "2026-11-04",
-   "when_label": "19 days late",
+   "when_label": "20 days late",
    "who": "shared",
    "feature": "Money",
    "icon": "wallet"
@@ -25,7 +25,7 @@
    "group": "overdue",
    "text": "Overdue: Municipal account for November",
    "when": "2026-11-18",
-   "when_label": "5 days late",
+   "when_label": "6 days late",
    "who": "ravisha",
    "feature": "Bills",
    "icon": "receipt"
@@ -35,7 +35,7 @@
    "group": "week",
    "text": "Staff pay run for November",
    "when": "2026-11-25",
-   "when_label": "Due Wed 25 Nov",
+   "when_label": "Due tomorrow",
    "who": "shared",
    "feature": "Staff",
    "icon": "users"
@@ -52,7 +52,7 @@
   },
   {
    "id": "bill-fibre-2026-12",
-   "group": "soon",
+   "group": "week",
    "text": "Fibre for December",
    "when": "2026-12-01",
    "when_label": "Due Tue 1 Dec",
@@ -62,7 +62,7 @@
   },
   {
    "id": "bill-pet-insurance-2026-12",
-   "group": "soon",
+   "group": "week",
    "text": "Pet insurance for December",
    "when": "2026-12-01",
    "when_label": "Due Tue 1 Dec",
@@ -82,18 +82,16 @@
   }
  ],
  "today": {
-  "date": "2026-11-23",
-  "label": "Monday 23 November",
+  "date": "2026-11-24",
+  "label": "Tuesday 24 November",
   "events": [],
-  "notes": [
-   "Bin day today"
-  ]
+  "notes": []
  },
  "coming_up": {
   "days": [
    {
     "date": "2026-11-25",
-    "label": "Wed 25 Nov",
+    "label": "Tomorrow",
     "items": [
      {
       "title": "Ravisha's pay day",
@@ -144,15 +142,15 @@
    {
     "title": "Crystal Springs Trip with Govenders",
     "date": "2026-12-14",
-    "label": "in 21 days",
-    "days": 21,
+    "label": "in 20 days",
+    "days": 20,
     "who": "both"
    },
    {
     "title": "Ravisha Durbs Xmas Trip",
     "date": "2026-12-24",
-    "label": "in 31 days",
-    "days": 31,
+    "label": "in 30 days",
+    "days": 30,
     "who": "ravisha"
    }
   ],
@@ -285,27 +283,14 @@
  "staff": {
   "days": [
    {
-    "date": "2026-11-23",
-    "label": "Today",
-    "working": [
-     {
-      "name": "Lydia"
-     },
-     {
-      "name": "Nozwelo"
-     }
-    ],
-    "away": []
-   },
-   {
     "date": "2026-11-24",
-    "label": "Tomorrow",
+    "label": "Today",
     "working": [],
     "away": []
    },
    {
     "date": "2026-11-25",
-    "label": "Wed 25 Nov",
+    "label": "Tomorrow",
     "working": [
      {
       "name": "Lydia"
@@ -342,6 +327,16 @@
     "date": "2026-11-29",
     "label": "Sun 29 Nov",
     "working": [],
+    "away": []
+   },
+   {
+    "date": "2026-11-30",
+    "label": "Mon 30 Nov",
+    "working": [
+     {
+      "name": "Lydia"
+     }
+    ],
     "away": []
    }
   ]
