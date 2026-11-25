@@ -1,7 +1,7 @@
 {
  "version": 1,
- "generated_at": "2026-11-24T21:05:48+02:00",
- "stale_after": "2026-11-25T09:00:00+02:00",
+ "generated_at": "2026-11-25T06:06:09+02:00",
+ "stale_after": "2026-11-25T09:06:09+02:00",
  "home": {
   "line": "6 things need attention",
   "attention": 6,
@@ -15,7 +15,7 @@
    "group": "overdue",
    "text": "Garden Supplies & Materials over budget for November",
    "when": "2026-11-04",
-   "when_label": "20 days late",
+   "when_label": "21 days late",
    "who": "shared",
    "feature": "Money",
    "icon": "wallet"
@@ -25,17 +25,17 @@
    "group": "overdue",
    "text": "Overdue: Municipal account for November",
    "when": "2026-11-18",
-   "when_label": "6 days late",
+   "when_label": "7 days late",
    "who": "ravisha",
    "feature": "Bills",
    "icon": "receipt"
   },
   {
    "id": "staff-payrun-2026-11",
-   "group": "week",
+   "group": "today",
    "text": "Staff pay run for November",
    "when": "2026-11-25",
-   "when_label": "Due tomorrow",
+   "when_label": "Due today",
    "who": "shared",
    "feature": "Staff",
    "icon": "users"
@@ -82,31 +82,16 @@
   }
  ],
  "today": {
-  "date": "2026-11-24",
-  "label": "Tuesday 24 November",
+  "date": "2026-11-25",
+  "label": "Wednesday 25 November",
   "events": [],
-  "notes": []
+  "notes": [
+   "Ravisha's pay day",
+   "Staff pay day (Lydia, Nozwelo)"
+  ]
  },
  "coming_up": {
   "days": [
-   {
-    "date": "2026-11-25",
-    "label": "Tomorrow",
-    "items": [
-     {
-      "title": "Ravisha's pay day",
-      "type": "payday",
-      "who": "both",
-      "time": null
-     },
-     {
-      "title": "Staff pay day (Lydia, Nozwelo)",
-      "type": "payday",
-      "who": "both",
-      "time": null
-     }
-    ]
-   },
    {
     "date": "2026-11-27",
     "label": "Fri 27 Nov",
@@ -142,15 +127,15 @@
    {
     "title": "Crystal Springs Trip with Govenders",
     "date": "2026-12-14",
-    "label": "in 20 days",
-    "days": 20,
+    "label": "in 19 days",
+    "days": 19,
     "who": "both"
    },
    {
     "title": "Ravisha Durbs Xmas Trip",
     "date": "2026-12-24",
-    "label": "in 30 days",
-    "days": 30,
+    "label": "in 29 days",
+    "days": 29,
     "who": "ravisha"
    }
   ],
@@ -329,14 +314,8 @@
  "staff": {
   "days": [
    {
-    "date": "2026-11-24",
-    "label": "Today",
-    "working": [],
-    "away": []
-   },
-   {
     "date": "2026-11-25",
-    "label": "Tomorrow",
+    "label": "Today",
     "working": [
      {
       "name": "Lydia"
@@ -349,7 +328,7 @@
    },
    {
     "date": "2026-11-26",
-    "label": "Thu 26 Nov",
+    "label": "Tomorrow",
     "working": [],
     "away": []
    },
@@ -383,6 +362,12 @@
       "name": "Lydia"
      }
     ],
+    "away": []
+   },
+   {
+    "date": "2026-12-01",
+    "label": "Tue 1 Dec",
+    "working": [],
     "away": []
    }
   ]
