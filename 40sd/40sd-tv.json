@@ -1,7 +1,7 @@
 {
  "version": 1,
- "generated_at": "2026-11-26T06:06:01+02:00",
- "stale_after": "2026-11-26T09:06:01+02:00",
+ "generated_at": "2026-11-26T07:05:05+02:00",
+ "stale_after": "2026-11-26T10:05:05+02:00",
  "home": {
   "line": "6 things need attention",
   "attention": 6,
@@ -264,6 +264,15 @@
    {
     "item": "Black tea",
     "shop": "Spar (Ferndale Village)",
+    "product": "Tagless Teabags 100 pk",
+    "price_label": "R39,99",
+    "was_label": null,
+    "where": "Not stated",
+    "until_label": "until Sun 6 Dec"
+   },
+   {
+    "item": "Black tea",
+    "shop": "Spar (Ferndale Village)",
     "product": "Five Roses Ceylon Blend Tagless Tea Bags (102pk)",
     "price_label": "R54,99",
     "was_label": null,
@@ -302,6 +311,15 @@
     "shop": "Woolworths",
     "product": "2-Ply Toilet Paper 18-pack",
     "price_label": "R110",
+    "was_label": null,
+    "where": "Not stated",
+    "until_label": "until Sun 6 Dec"
+   },
+   {
+    "item": "Toilet paper",
+    "shop": "Spar (Ferndale Village)",
+    "product": "2 Ply Toilet Rolls 24 pk",
+    "price_label": "R129,99",
     "was_label": null,
     "where": "Not stated",
     "until_label": "until Sun 6 Dec"
