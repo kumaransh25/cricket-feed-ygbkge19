@@ -1,7 +1,7 @@
 {
  "version": 1,
- "generated_at": "2026-11-26T18:06:13+02:00",
- "stale_after": "2026-11-26T21:06:13+02:00",
+ "generated_at": "2026-11-26T19:05:52+02:00",
+ "stale_after": "2026-11-26T22:05:52+02:00",
  "home": {
   "line": "6 things need attention",
   "attention": 6,
@@ -79,6 +79,16 @@
    "who": "ravisha",
    "feature": "Bills",
    "icon": "receipt"
+  },
+  {
+   "id": "staff-payrun-2026-12",
+   "group": "soon",
+   "text": "Staff pay run for December",
+   "when": "2026-12-24",
+   "when_label": "Due Thu 24 Dec",
+   "who": "shared",
+   "feature": "Staff",
+   "icon": "users"
   }
  ],
  "today": {
@@ -362,6 +372,10 @@
     "working": [
      {
       "name": "Lydia"
+     },
+     {
+      "name": "Nozwelo",
+      "note": "moved from Mon 23 Nov"
      }
     ],
     "away": []
