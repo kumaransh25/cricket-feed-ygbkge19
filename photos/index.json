@@ -1,6 +1,6 @@
 {
     "schema":  1,
-    "updated":  "2026-11-14T07:00:46.8746144+02:00",
+    "updated":  "2026-11-26T21:31:55.5450882+02:00",
     "photos":  [
                    {
                        "id":  "p-02a126f6d593",
@@ -27,6 +27,10 @@
                        "name":  "Blue-headed Agama in Full Colour"
                    },
                    {
+                       "id":  "p-3a526416b7cc",
+                       "name":  "Burchell\u0027s Starling, Glossy Blue"
+                   },
+                   {
                        "id":  "p-81835ac3bbbe",
                        "name":  "Bushveld Dusk in Motion"
                    },
@@ -51,6 +55,10 @@
                        "name":  "Double-banded Sandgrouse, Perfectly Camouflaged"
                    },
                    {
+                       "id":  "p-49e7f6ec6fd9",
+                       "name":  "Elephant Trunk Curled Round a Branch"
+                   },
+                   {
                        "id":  "p-b52e3bc86b99",
                        "name":  "Elephant Up Close, in Black and White"
                    },
@@ -63,8 +71,16 @@
                        "name":  "Elephants at the Water\u0027s Edge"
                    },
                    {
+                       "id":  "p-16a816a7209b",
+                       "name":  "Elephant\u0027s Eye, Every Wrinkle"
+                   },
+                   {
                        "id":  "p-60514c766741",
                        "name":  "Elephants Sparring, in Sepia"
+                   },
+                   {
+                       "id":  "p-2e1142246442",
+                       "name":  "European Bee-eaters, a Pair on the Thorns"
                    },
                    {
                        "id":  "p-2d632e23db47",
@@ -99,12 +115,20 @@
                        "name":  "Goliath Heron Among the Rocks"
                    },
                    {
+                       "id":  "p-acca1c13aa2c",
+                       "name":  "Hooded Vulture Riding the Thermals"
+                   },
+                   {
                        "id":  "p-88d4b057cb79",
                        "name":  "Hyena Cub in Black and White"
                    },
                    {
                        "id":  "p-dbea06411eac",
                        "name":  "Hyena Cub, Taking a Sip"
+                   },
+                   {
+                       "id":  "p-0ac91386c781",
+                       "name":  "Impala Ewes Peering Through the Bush"
                    },
                    {
                        "id":  "p-f950fdb20bdc",
@@ -117,6 +141,10 @@
                    {
                        "id":  "p-1775ddceb964",
                        "name":  "Impala Ram in the Thicket"
+                   },
+                   {
+                       "id":  "p-154e6d4e9bc8",
+                       "name":  "Impala Rams Locking Horns"
                    },
                    {
                        "id":  "p-dffe18fd1bec",
@@ -155,8 +183,28 @@
                        "name":  "Lilac-breasted Roller, Painted on the Sky"
                    },
                    {
+                       "id":  "p-9d213ca41bc7",
+                       "name":  "Lion Emerging From the Tall Grass"
+                   },
+                   {
+                       "id":  "p-04d286a84e0f",
+                       "name":  "Lion Stares Out of the Grass"
+                   },
+                   {
+                       "id":  "p-82a559360e5a",
+                       "name":  "Lioness in Profile"
+                   },
+                   {
+                       "id":  "p-3ae7da04c2d5",
+                       "name":  "Lioness, Half-Lidded in the Grass"
+                   },
+                   {
                        "id":  "p-c443fc262a73",
                        "name":  "Monitor Lizard, Peeking Out"
+                   },
+                   {
+                       "id":  "p-fc7a53d7b426",
+                       "name":  "Nile Crocodile on the Sandbank"
                    },
                    {
                        "id":  "p-62c3e2467a77",
@@ -215,6 +263,10 @@
                        "name":  "Vultures Gather in the Canopy"
                    },
                    {
+                       "id":  "p-4dd5607b4bfe",
+                       "name":  "Wahlberg\u0027s Eagle in the Canopy"
+                   },
+                   {
                        "id":  "p-4ef9eea6285f",
                        "name":  "Waterbuck Bull Standing Tall"
                    },
@@ -249,6 +301,18 @@
                    {
                        "id":  "p-c1dd457d0f9b",
                        "name":  "Yellow-billed Kite on a Bare Branch"
+                   },
+                   {
+                       "id":  "p-9970fe659763",
+                       "name":  "Yellow-billed Kite on a Broken Stump"
+                   },
+                   {
+                       "id":  "p-ea5d4244243d",
+                       "name":  "Young Lion Among the Wildflowers"
+                   },
+                   {
+                       "id":  "p-30dc66ed96e2",
+                       "name":  "Young Lion in the Thicket"
                    },
                    {
                        "id":  "p-4817cb6a95ad",
