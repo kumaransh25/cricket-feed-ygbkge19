@@ -1,7 +1,7 @@
 {
  "version": 1,
- "generated_at": "2026-11-27T19:05:59+02:00",
- "stale_after": "2026-11-27T22:05:59+02:00",
+ "generated_at": "2026-11-27T20:04:57+02:00",
+ "stale_after": "2026-11-27T23:04:57+02:00",
  "home": {
   "line": "6 things need attention",
   "attention": 6,
@@ -342,7 +342,12 @@
    {
     "date": "2026-11-29",
     "label": "Sun 29 Nov",
-    "working": [],
+    "working": [
+     {
+      "name": "Luweh",
+      "note": "owed day"
+     }
+    ],
     "away": []
    },
    {
