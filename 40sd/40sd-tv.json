@@ -1,7 +1,7 @@
 {
  "version": 1,
- "generated_at": "2026-11-27T21:05:57+02:00",
- "stale_after": "2026-11-28T09:00:00+02:00",
+ "generated_at": "2026-11-28T06:05:53+02:00",
+ "stale_after": "2026-11-28T09:05:53+02:00",
  "home": {
   "line": "6 things need attention",
   "attention": 6,
@@ -15,7 +15,7 @@
    "group": "overdue",
    "text": "Garden Supplies & Materials over budget for November",
    "when": "2026-11-04",
-   "when_label": "23 days late",
+   "when_label": "24 days late",
    "who": "shared",
    "feature": "Money",
    "icon": "wallet"
@@ -25,7 +25,7 @@
    "group": "overdue",
    "text": "Overdue: Municipal account for November",
    "when": "2026-11-18",
-   "when_label": "9 days late",
+   "when_label": "10 days late",
    "who": "ravisha",
    "feature": "Bills",
    "icon": "receipt"
@@ -35,17 +35,17 @@
    "group": "overdue",
    "text": "Staff pay run for November",
    "when": "2026-11-25",
-   "when_label": "2 days late",
+   "when_label": "3 days late",
    "who": "shared",
    "feature": "Staff",
    "icon": "users"
   },
   {
    "id": "money-transfer-2026-11",
-   "group": "today",
+   "group": "overdue",
    "text": "Transfer to Ravisha for November",
    "when": "2026-11-27",
-   "when_label": "Due today",
+   "when_label": "1 day late",
    "who": "kumaran",
    "feature": "Money",
    "icon": "wallet"
@@ -92,13 +92,10 @@
   }
  ],
  "today": {
-  "date": "2026-11-27",
-  "label": "Friday 27 November",
+  "date": "2026-11-28",
+  "label": "Saturday 28 November",
   "events": [],
-  "notes": [
-   "Kumaran's pay day",
-   "Staff pay day (Luweh)"
-  ]
+  "notes": []
  },
  "coming_up": {
   "days": [
@@ -119,19 +116,27 @@
    {
     "title": "Crystal Springs Trip with Govenders",
     "date": "2026-12-14",
-    "label": "in 17 days",
-    "days": 17,
+    "label": "in 16 days",
+    "days": 16,
     "who": "both"
    },
    {
     "title": "Ravisha Durbs Xmas Trip",
     "date": "2026-12-24",
-    "label": "in 27 days",
-    "days": 27,
+    "label": "in 26 days",
+    "days": 26,
     "who": "ravisha"
    }
   ],
-  "birthdays": []
+  "birthdays": [
+   {
+    "name": "Kohulan's Birthday",
+    "type": "birthday",
+    "date": "2027-01-27",
+    "label": "Wed 27 Jan",
+    "sub": "turns 39"
+   }
+  ]
  },
  "month": {
   "from": "2026-11-01",
@@ -324,24 +329,14 @@
  "staff": {
   "days": [
    {
-    "date": "2026-11-27",
-    "label": "Today",
-    "working": [
-     {
-      "name": "Lydia"
-     }
-    ],
-    "away": []
-   },
-   {
     "date": "2026-11-28",
-    "label": "Tomorrow",
+    "label": "Today",
     "working": [],
     "away": []
    },
    {
     "date": "2026-11-29",
-    "label": "Sun 29 Nov",
+    "label": "Tomorrow",
     "working": [
      {
       "name": "Luweh",
@@ -387,6 +382,16 @@
     "date": "2026-12-03",
     "label": "Thu 3 Dec",
     "working": [],
+    "away": []
+   },
+   {
+    "date": "2026-12-04",
+    "label": "Fri 4 Dec",
+    "working": [
+     {
+      "name": "Lydia"
+     }
+    ],
     "away": []
    }
   ]
