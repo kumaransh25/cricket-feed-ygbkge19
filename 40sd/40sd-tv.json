@@ -1,7 +1,7 @@
 {
  "version": 1,
- "generated_at": "2026-11-28T08:06:06+02:00",
- "stale_after": "2026-11-28T11:06:06+02:00",
+ "generated_at": "2026-11-28T10:04:59+02:00",
+ "stale_after": "2026-11-28T13:04:59+02:00",
  "home": {
   "line": "6 things need attention",
   "attention": 6,
@@ -89,6 +89,16 @@
    "who": "shared",
    "feature": "Staff",
    "icon": "users"
+  },
+  {
+   "id": "money-transfer-2026-12",
+   "group": "soon",
+   "text": "Transfer to Ravisha for December",
+   "when": "2026-12-28",
+   "when_label": "Due Mon 28 Dec",
+   "who": "kumaran",
+   "feature": "Money",
+   "icon": "wallet"
   }
  ],
  "today": {
