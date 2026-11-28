@@ -1,10 +1,10 @@
 {
  "version": 1,
- "generated_at": "2026-11-28T12:05:53+02:00",
- "stale_after": "2026-11-28T15:05:53+02:00",
+ "generated_at": "2026-11-28T13:05:45+02:00",
+ "stale_after": "2026-11-28T16:05:45+02:00",
  "home": {
-  "line": "6 things need attention",
-  "attention": 6,
+  "line": "5 things need attention",
+  "attention": 5,
   "today_events": 0,
   "open_orders": 0,
   "running_low": 3
@@ -29,16 +29,6 @@
    "who": "ravisha",
    "feature": "Bills",
    "icon": "receipt"
-  },
-  {
-   "id": "staff-payrun-2026-11",
-   "group": "overdue",
-   "text": "Staff pay run for November",
-   "when": "2026-11-25",
-   "when_label": "3 days late",
-   "who": "shared",
-   "feature": "Staff",
-   "icon": "users"
   },
   {
    "id": "money-transfer-2026-11",
